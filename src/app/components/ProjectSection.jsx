@@ -28,7 +28,7 @@ const ProjectSection = () => {
   return (
     <section id="projects">
 
-        <h1 className='text-center lg:text-7xl md:text-5xl sm:text-3xl '>My Projects</h1>
+        <h1 className='text-center m-8 lg:text-7xl md:text-5xl sm:text-3xl '>My Projects</h1>
     <div className="grid md:grid-cols-3 gap-8 md:gap-12">
     {Projects.map((item, id) => (
     <ProjectCard
