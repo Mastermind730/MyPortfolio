@@ -52,7 +52,7 @@ const AboutSection = () => {
       });
     };
   return (
-    <section>
+    <section id="about">
       <div className=" grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 p-2 m-12">
         <div className="rounded full mx-4">
           <Image

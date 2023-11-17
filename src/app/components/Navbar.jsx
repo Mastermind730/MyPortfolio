@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className='fixed mx-auto top-0 right-0 bg-[#121212] bg-opacity-100 left-0 opacity-80 z-10 '>
         
         <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-            <Link href={'/'} className='md:text-6-xl lg: text-8xl sm:text-4xl'>LOGO</Link>
+            <Link href={'/'} className='md:text-5-xl lg: text-6xl sm:text-3xl'>LOGO</Link>
             <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="menu hidden md:block md:w-auto">
             <ul className='flex p-4 gap-3 '>
                 {navLinks.map((link,index)=>{
-                    return(<li className="text-center mx-auto" key={index}><NavLink href={link.title} title={link.title}/></li>)
+                    return(<li className="text-center mx-auto" key={index}><NavLink href={link.path} title={link.title}/></li>)
                 })}
             </ul>
             </div>
