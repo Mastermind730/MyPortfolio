@@ -3,13 +3,13 @@ import NavLink from './NavLink'
 
 
 const navLinks = [
+  {
+    title: "Home",
+    path: "#home",
+  },
     {
       title: "About",
       path: "#about",
-    },
-    {
-      title: "Home",
-      path: "#home",
     },
     {
       title: "Projects",

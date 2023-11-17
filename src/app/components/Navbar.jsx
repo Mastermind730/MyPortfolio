@@ -6,13 +6,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MenuOverlay from './MenuOverlay';
 const navLinks = [
+  {
+    title: "Home",
+    path: "#home",
+  },
     {
       title: "About",
       path: "#about",
-    },
-    {
-      title: "Home",
-      path: "#home",
     },
     {
       title: "Projects",
