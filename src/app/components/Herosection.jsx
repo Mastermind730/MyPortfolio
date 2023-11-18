@@ -63,13 +63,13 @@ const Herosection = () => {
     <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }} className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative float right-0 sm:m-12">
+          transition={{ duration: 0.5 }} className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] sm:w-[180px] sm:h-[180px] relative float right-0 sm:m-12">
     <Image
               src="/images/hero-image.jpg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={280}
-              height={280}
+              className="absolute mt-2 mb-14  transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+              width={260}
+              height={260}
             />
     </motion.div>
    

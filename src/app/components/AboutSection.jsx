@@ -53,13 +53,14 @@ const AboutSection = () => {
     };
   return (
     <section id="about">
-      <div className=" grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 p-2 m-12">
-        <div className="rounded full mx-4">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1  sm:mx-10 ">
+        <div className="rounded full mt-12 mb-5 mx-4">
           <Image
             src="/images/about-image.jpg"
             alt="menu-image"
-            width={500}
-            height={500}
+            width={350}
+            height={350}
+            
           />
         </div>
 
