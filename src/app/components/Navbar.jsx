@@ -29,30 +29,30 @@ const Navbar = () => {
     <nav className='fixed mx-auto top-0 right-0 bg-[#121212] bg-opacity-100 left-0 opacity-80 z-10 '>
         
         <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-            <Link href={'/'} className='md:text-4-xl lg: text-6xl sm:text-2xl'>LOGO</Link>
+            <Link href={'/'} className=' text-2xl md:text-4-xl lg: text-6xl sm:text-2xl'>LOGO</Link>
             <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center  px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <Image
               src="/images/menu.png"
               alt="menu image"
-              width={50}
-              height={50}
+              width={20}
+              height={20}
             />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center  px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
                <Image
               src="/images/cross.png"
               alt="cross image"
-              width={50}
-              height={50}
+              width={20}
+              height={20}
             />
             </button>
           )}

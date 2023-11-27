@@ -1,17 +1,15 @@
-import React from 'react'
-
-const TabButton = ({ active, selectTab, children }) => {
-    const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
-  
-    return (
-      <button onClick={selectTab}>
-        <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
-          {children}
-        </p>
-        </button>
-    );
-  };
-  
-
+// Example TabButton component
+const TabButton = ({ selectTab, active, children }) => {
+  return (
+    <button
+      onClick={selectTab}
+      className={`text-white relative ${
+        active ? 'border-b-2 border-purple-500' : ''
+      } py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded`}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default TabButton;
