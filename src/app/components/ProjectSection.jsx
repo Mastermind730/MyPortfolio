@@ -24,6 +24,16 @@ const Projects=[
         title:"Steganography",
         description:"A project using Python OpenCV that encrypts an message in a image using Steganography techniques and also decrypts the same and displays it",
         giturl:"https://github.com/Mastermind730/Steganography"
+    },
+    {id:5,
+        title:"Issue Tracker",
+        description:"Built a robust project issue tracker using Next.js for frontend development, Prisma for database management, and Radix UI for seamless component design.",
+        giturl:"https://github.com/Mastermind730/Issue_Tracker"
+    },
+    {id:6,
+        title:"Auction System",
+        description:"Developing a state-of-the-art digital auction platform, this project prioritizes real-time bidding with a responsive interface. Organizer tools include robust event customization and real-time monitoring,while comprehensive listings showcase diverse items. Rigorous bidder verification ensures a trustworthy environment,enhancing transparency and engagement.",
+        giturl:"https://github.com/Mastermind730/Issue_Tracker"
     }
 ];
 
