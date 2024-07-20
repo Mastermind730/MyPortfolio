@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -34,6 +35,8 @@ const EmailSection = () => {
 
     if (response.status === 200) {
       console.log("Message sent.");
+      toast.success("Message sent successfully")
+      
       setEmailSubmitted(true);
     }
   };

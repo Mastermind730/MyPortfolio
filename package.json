@@ -11,8 +11,10 @@
   "dependencies": {
     "framer-motion": "^10.16.5",
     "next": "14.0.2",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "react-type-animation": "^3.2.0",
     "resend": "^2.0.0"
   },

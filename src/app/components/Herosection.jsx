@@ -43,7 +43,7 @@ const Herosection = () => {
           </p>
           <div className="buttons flex flex-col sm:flex-row">
             <Link
-              href="/contact"
+              href="#contact"
               className="px-6 inline-block py-3 sm:w-fit rounded-full mb-4 sm:mb-0 bg-gradient-to-br from-red-600 to-blue-800 hover:bg-slate-200 text-white"
             >
               Hire Me
@@ -62,7 +62,7 @@ const Herosection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] sm:w-[180px] sm:h-[180px] relative mt-8 sm:mt-0"
+          className="rounded-full bg-[#181818] w-[280px] h-[250px] lg:w-[410px] lg:h-[410px] sm:w-[200px] sm:h-[200px] relative mt-8 sm:mt-0"
         >
           <Image
             src="/images/hero-image.jpg"

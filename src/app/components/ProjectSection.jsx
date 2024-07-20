@@ -15,7 +15,8 @@ const Projects=[
         title:"Image Editor",
         description:"An Image editing website made using Python Flask and Open CV",
         giturl:"https://github.com/Mastermind730/ImageEditor"
-    }, {id:3,
+    }, 
+    {id:3,
         title:"ThinkBot",
         description:"A clone of Jarvis made using Python and its awesome libraries",
         giturl:"https://github.com/Mastermind730/ThinkBot"
@@ -32,8 +33,23 @@ const Projects=[
     },
     {id:6,
         title:"Auction System",
-        description:"Developing a state-of-the-art digital auction platform, this project prioritizes real-time bidding with a responsive interface. Organizer tools include robust event customization and real-time monitoring,while comprehensive listings showcase diverse items. Rigorous bidder verification ensures a trustworthy environment,enhancing transparency and engagement.",
+        description:"This digital auction platform offers real-time bidding, a responsive interface, robust organizer tools, diverse item listings, and secure bidder verification. It ensures a transparent and engaging experience. ",
         giturl:"https://github.com/Mastermind730/Issue_Tracker"
+    },
+    {id:7,
+        title:"My Messenger",
+        description:"Mymessenger is a full-stack chat application offering real-time messaging, user authentication, and a sleek, responsive interface. It ensures secure and seamless communication across devices.",
+        giturl:"https://github.com/Mastermind730/my-messenger"
+    },
+    {id:8,
+        title:"Expense Tracker",
+        description:"This full-stack expense tracker offers real-time expense logging, budget management, and insightful analytics. It provides a secure and intuitive interface for tracking and managing finances.",
+        giturl:"https://github.com/Mastermind730/Expense_Tracker"
+    },
+    {id:9,
+        title:"Quizmify",
+        description:"AIQuiz is an AI-powered quiz application that generates personalized quizzes and provides real-time feedback. It offers a dynamic and engaging learning experience with advanced analytics.",
+        giturl:"https://github.com/Mastermind730/Quizmify"
     }
 ];
 

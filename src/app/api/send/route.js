@@ -1,29 +1,37 @@
-// import { EmailTemplate } from '../../../components/EmailTemplate';
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { NextResponse, NextRequest } from "next/server";
+import { transport } from "@/lib/email";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
+export async function POST(request) {
+    const username = process.env.PUBLIC_EMAIL_USERNAME;
+    const password = process.env.PUBLIC_EMAIL_PASSWORD;
+    const myEmail = process.env.PUBLIC_PERSONAL_EMAIL;
 
-export async function POST(req, res) {
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
-  try {
-    const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
-      react: (
-        <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
-    });
-    return NextResponse.json(data);
-  } catch (error) {
-    return NextResponse.json({ error });
-  }
+    try {
+        const formData = await request.json();
+        const { email, subject, message } = formData;
+        // console.log(formData);
+        const mailOptions = {
+            from: email,
+            to: username,
+            subject: subject,
+            html: `
+                <div>
+                    <h1>${subject}</h1>
+                    <p>Thank you for contacting us!</p>
+                    <p>New message submitted:</p>
+                    <p>${message}</p>
+                </div>
+            `,
+        };
+
+        if (email) {
+            mailOptions.replyTo = email;
+        }
+
+        const mail = await transport.sendMail(mailOptions);
+        return NextResponse.json({ message: "Success: email was sent" });
+    } catch (error) {
+        console.log(`Error sending email: ${error}`);
+        return NextResponse.json({ message: "COULD NOT SEND MESSAGE" }, { status: 500 });
+    }
 }
