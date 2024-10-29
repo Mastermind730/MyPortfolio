@@ -29,12 +29,48 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Experience",
+    id: "experiences",
     content: (
       <ul className="list-disc pl-2">
-        <li>Certificate1</li>
-        <li>Certificate2</li>
+        <li>
+    <strong>Software Engineer Intern</strong> at HSBC
+    <br />
+    Aug 2024 - Present · 3 mos
+    <br />
+    <span className="text-gray-500">Pune, Maharashtra, India</span>
+  </li>
+       <li>
+    <strong>President</strong> at PCCOE ACM Student Chapter
+    <br />
+    Aug 2024 - Present · 3 mos
+    <br />
+    <span className="text-gray-500">Full-time</span>
+  </li>
+       <li>
+    <strong>Open Source Developer</strong> at GirlScript Summer of Code
+    <br />
+    May 2024 - Jul 2024 · 3 mos
+    <br />
+    <span className="text-gray-500">Full-time</span>
+  </li>
+  <li>
+    <strong>Junior Webmaster</strong> at PCCOE ACM Student Chapter
+    <br />
+    Oct 2023 - Aug 2024 · 11 mos
+    <br />
+    <span className="text-gray-500">Hybrid, Maharashtra, India</span>
+    <br />
+    Skills: Node.js, HTML, Next.js, JavaScript, React.js
+  </li>
+  
+  <li>
+    <strong>Campus Ambassador</strong> at Techfest, IIT Bombay
+    <br />
+    Jun 2023 - Present · 1 yr 5 mos
+    <br />
+    <span className="text-gray-500"></span>
+    </li>
       </ul>
     ),
   },
@@ -81,10 +117,10 @@ const AboutSection = () => {
               Education
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("experiences")}
+              active={tab === "experiences"}
             >
-              Certifications
+              Experiences
             </TabButton>
           </div>
           <div className="mt-8">

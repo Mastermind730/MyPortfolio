@@ -38,8 +38,8 @@ const Herosection = () => {
           </h1>
 
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+            I am currently an intern at HSBC and serve as the President of SDW CESA ACM. With a passion for
+            web development, design, and creating engaging user experiences, I strive to bring ideas to life through code.
           </p>
           <div className="buttons flex flex-col sm:flex-row">
             <Link
